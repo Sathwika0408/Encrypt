@@ -1,11 +1,9 @@
-#https://github.com/Sahityavani/Stegno.git
-
 
 import cv2
 import os
 import string
 
-img = cv2.imread("mypic.jpg") # Replace with the correct image path
+img = cv2.imread("mypic.jpg") 
 
 msg = input("Enter secret message :")
 password = input("Enter a passcode : ")
@@ -28,7 +26,7 @@ for i in range(len(msg)):
     z = (z + 1) % 3
 
 cv2.imwrite("encryptedImage.jpg", img)
-os.system("start encryptedImage.jpg")  # Use 'start' to open the image on Windows
+os.system("start encryptedImage.jpg")
 
 message = ""
 n = 0
